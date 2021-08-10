@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $mainFont;
+  font-size: 1.6rem;
+  background-color: $lightBlueBg;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: $mobileImgBg;
+  @include mq-desktop {
+    background-image: $desktopImgBg;
+  }
+  color: $darkBlue;
+}
+
+p {
+  font-size: 16px;
+}

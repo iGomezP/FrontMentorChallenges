@@ -1,0 +1,23 @@
+// Primary Colors
+$lightBlueBg: hsl(225, 100%, 94%);
+$darkBlueBg: hsl(245, 75%, 52%);
+
+// Secondary Colors
+$lightBlue: hsl(255, 100%, 98%);
+$desatBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+$white: #ffffff;
+
+// Fonts
+$mainFont: "Red Hat Display", sans-serif;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+// Screen sizes
+$mobileScreen: 768px;
+$desktopScreen: 1360px;
+
+// Images
+$desktopImgBg: url(/src/images/pattern-background-desktop.svg);
+$mobileImgBg: url("../images/pattern-background-mobile.svg");
