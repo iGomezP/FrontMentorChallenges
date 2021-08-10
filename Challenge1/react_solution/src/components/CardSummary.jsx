@@ -29,7 +29,7 @@ const CardSummary = () => {
             </div>
 
             <div className="annual-plan_price">
-              <h3>Annual Plan</h3>
+              <h2>Annual Plan</h2>
               <p>$59.99/year</p>
             </div>
 
@@ -44,7 +44,7 @@ const CardSummary = () => {
 
 
           <div className="order">
-            <a href="http://" target="_blank" rel="noopener noreferrer">Cancel Order</a>
+            <a href="/">Cancel Order</a>
           </div>
         </div>
 
