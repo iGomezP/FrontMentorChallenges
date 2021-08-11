@@ -1,0 +1,121 @@
+// ¬ Main Containers
+.main-container {
+  background-color: $cardBlueBg;
+  margin: auto;
+  margin-top: 5%;
+  display: grid;
+  border-radius: 1.5rem;
+  width: 90%;
+  padding-bottom: 4rem;
+  @include mq-desktop {
+    width: 70%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0;
+  }
+}
+
+.main-container_text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  row-gap: 1.5rem;
+  @include mq-desktop {
+    width: 75%;
+    justify-content: space-around;
+    text-align: left;
+  }
+}
+
+.main-container_stats {
+  @include mq-desktop {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+// ¬ Container Contents
+
+.container-title {
+  color: $mainWhite;
+
+  & span {
+    color: $violetAccent;
+  }
+}
+
+.container_description > p {
+  color: $headingsWhite;
+  line-height: 1.5;
+}
+
+.container_stats {
+  color: $mainWhite;
+  line-height: 50%;
+  margin-top: 0.5rem;
+
+  & > span {
+    text-transform: uppercase;
+    color: $headingsWhite;
+  }
+  @include mq-desktop {
+    margin: 0;
+  }
+}
+
+.main-container_image {
+  background-image: url(../../images/image-header-mobile.jpg);
+  background-repeat: no-repeat;
+  padding-top: 73.394495413%;
+  background-size: 100%;
+  width: 100%;
+  height: 0;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  position: relative;
+  border-radius: 1.5rem 1.5rem 0 0;
+
+  @include mq-desktop {
+    background-image: url(../../images/image-header-desktop.jpg);
+    padding-top: 82.592592593%;
+    grid-column-start: 2;
+    border-radius: 0 1.5rem 1.5rem 0;
+  }
+
+  &:after {
+    border-radius: 1.5rem 1.5rem 0 0;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: $violetAccent;
+    filter: saturate(3) brightness(60%) hue-rotate(-5deg);
+    opacity: 0.4;
+    @include mq-desktop {
+      border-radius: 0 1.5rem 1.5rem 0;
+    }
+  }
+}
+
+// ¬ Footer
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  margin: 2rem;
+
+  @include mq-desktop {
+    font-size: 16px;
+  }
+
+  & > a {
+    color: hsl(228, 45%, 44%);
+  }
+}

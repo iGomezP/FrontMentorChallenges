@@ -1,0 +1,24 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $lexendDeca;
+  font-size: 1.5rem;
+  background-color: $darkBlueBg;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: $mainWhite;
+}
+
+// h1,
+// h2 {
+//   color: $mainWhite;
+// }
