@@ -372,12 +372,11 @@ p {
   color: rgba(255, 255, 255, 0.75);
 }
 
-button,
 input {
   padding: 2rem;
   border-radius: 3rem;
   cursor: pointer;
-  width: 70%;
+  width: 100%;
   background-color: #f2f2f2;
   border: solid;
 }

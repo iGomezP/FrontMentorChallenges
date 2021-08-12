@@ -27,12 +27,11 @@ p {
   color: $transparentWhite;
 }
 
-button,
 input {
   padding: 2rem;
   border-radius: 3rem;
   cursor: pointer;
-  width: 70%;
+  width: 100%;
   background-color: $veryLightGray;
   border: solid;
 }
