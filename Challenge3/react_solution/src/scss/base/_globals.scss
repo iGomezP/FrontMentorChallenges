@@ -1,0 +1,38 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $veryLightGray;
+  font-family: $lexendDeca;
+  font-size: 1.5rem;
+  font-size: $regular;
+  color: $veryLightGray;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: $bigShoulders;
+  font-size: $bold;
+}
+
+p {
+  color: $transparentWhite;
+}
+
+button,
+input {
+  padding: 2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  width: 70%;
+  background-color: $veryLightGray;
+  border: solid;
+}

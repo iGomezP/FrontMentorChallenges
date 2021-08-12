@@ -1,0 +1,12 @@
+// Mixins
+@mixin mq-mobile {
+  @media (max-width: #{$mobileScreen}) {
+    @content;
+  }
+}
+
+@mixin mq-desktop {
+  @media (min-width: #{$desktopScreen}) {
+    @content;
+  }
+}

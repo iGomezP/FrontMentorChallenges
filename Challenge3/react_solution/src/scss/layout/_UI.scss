@@ -1,0 +1,102 @@
+// ¬ Containers
+.main-container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: auto;
+  width: 90%;
+  text-align: left;
+  margin-top: 10%;
+
+  @include mq-desktop {
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// ¬ Content
+.container_sedans,
+.container_suvs,
+.container_luxury {
+  padding: 15%;
+  line-height: 1.5;
+}
+
+.container_desktop {
+  height: 2rem;
+  @include mq-desktop {
+    height: 10rem;
+  }
+}
+
+.container_sedans {
+  background-color: $brightOrange;
+  border-radius: 1rem 1rem 0 0;
+
+  @include mq-desktop {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  & > input {
+    color: $brightOrange;
+    border-color: $brightOrange;
+    display: block;
+  }
+
+  & > input:hover {
+    background-color: $brightOrange;
+    color: $veryLightGray;
+    border-color: $veryLightGray;
+  }
+}
+
+.container_suvs {
+  background-color: $darkCyan;
+
+  & > input {
+    color: $darkCyan;
+    border-color: $darkCyan;
+  }
+
+  & > input:hover {
+    background-color: $darkCyan;
+    color: $veryLightGray;
+    border-color: $veryLightGray;
+  }
+}
+
+.container_luxury {
+  background-color: $veryDarkCyan;
+  border-radius: 0 0 1rem 1rem;
+
+  @include mq-desktop {
+    border-radius: 0 1rem 1rem 0;
+  }
+
+  & > input {
+    color: $veryDarkCyan;
+    border-color: $veryDarkCyan;
+  }
+
+  & > input:hover {
+    background-color: $veryDarkCyan;
+    color: $veryLightGray;
+    border-color: $veryLightGray;
+  }
+}
+
+// ¬ Footer
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  margin: 2rem;
+  color: #000000;
+
+  @include mq-desktop {
+    font-size: 16px;
+  }
+
+  & > a {
+    color: hsl(228, 45%, 44%);
+  }
+}
